@@ -1,0 +1,157 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    z-index: 1000 !important;
+    background: transparent;
+}
+
+.menu{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.userItems{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.userItems .icon{
+    position: relative;
+    color: #fff;
+    font-size: 1.3rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.userItems .icon .like,
+.userItems .icon .bag{
+    position: absolute;
+    right: 0;
+    bottom: 11px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    height: 18px;
+    width: 18px;
+    padding: 3px;
+    color: #fff;
+    background: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userItems .avatar{
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.userItems .avatar img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.userItems .avatar .a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.userItems .avatar .user{
+    display: flex;
+    flex-direction: column;
+}
+
+.userItems .avatar .user span{
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.userItems .avatar .user a{
+    font-size: 0.6rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    /* header{
+        align-content: center;
+    } */
+
+    .menu{
+        display: none;
+    }
+
+    .userItems{
+        gap: 10px;
+    }
+
+    .userItems .avatar{
+        width: 50px;
+    }
+
+    .userItems .avatar img{
+        width: 30px;
+        height: 30px;
+        margin-left: 0;
+    }
+
+    .userItems .avatar .user span{
+        display: none;
+    }
+
+    .userItems .avatar .user a{
+        display: none;
+    }
+    /* .userItems{
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+
+    .userItems .avatar{
+        flex-shrink: 10;
+    } */
+    /* .userItems .avatar{
+        width: 100px;
+        height: 50px;
+        padding: 10px 10px;
+    }
+
+    .userItems .avatar img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .userItems .avatar .a{
+        font-size: 1.5rem;
+    }
+
+    .userItems .avatar .user span{
+        font-size: 0.6rem;
+    }
+
+    .userItems .avatar .user a{
+        font-size: 0.5rem;
+    } */
+    
+}
